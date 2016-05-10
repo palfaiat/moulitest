@@ -10,6 +10,7 @@ static void unittest1(t_test *test)
 	ft_strlcat(buf, "abcdefghijklmnop", 10);
 	mt_assert(strcmp(buf, "abcabcdef") == 0);
 	mt_assert(ft_strlcat(buf, "abcd", 2) == 6);
+	mt_assert(strcmp(buf, "abcabcdef") == 0);
 }
 
 static void unittest2(t_test *test)
